@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/groupkin/static/css/main.073c9b0a.css",
+    "main.js": "/groupkin/static/js/main.cd154346.js",
+    "static/js/787.a076ed8c.chunk.js": "/groupkin/static/js/787.a076ed8c.chunk.js",
+    "static/media/logo.svg": "/groupkin/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/groupkin/index.html",
+    "main.073c9b0a.css.map": "/groupkin/static/css/main.073c9b0a.css.map",
+    "main.cd154346.js.map": "/groupkin/static/js/main.cd154346.js.map",
+    "787.a076ed8c.chunk.js.map": "/groupkin/static/js/787.a076ed8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.cd154346.js"
+  ]
+}
