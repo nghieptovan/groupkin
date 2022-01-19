@@ -1,0 +1,75 @@
+.box-comment {
+  background-color: #F2F3F5;
+  padding: 20px;
+  border: solid 1px #D8D8D8;
+  border-radius: 4px;
+
+  .btn-signout {
+    border-radius: 4px;
+    background-color: #365899;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    display: none;
+    cursor: pointer;
+
+    &.active {
+      display: block;
+    }
+
+    &:hover {
+      background-color: #ed1c24;
+    }
+  }
+
+  .form-input {
+    padding: 0px 0px 0 50px;
+
+    .user-ava {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      top: 0px;
+      left: 0px;
+      background-color: #fff;
+      text-align: center;
+
+      .icon {
+        color: #f2f3f5;
+        font-size: 20px;
+        line-height: 40px;
+        transform: translateY(4px);
+      }
+    }
+
+    .input-cmt {
+      resize: none;
+      width: 100%;
+      border: none;
+      height: 40px;
+      line-height: 1.5;
+      padding: unset;
+
+      font-size: 1.5em;
+    }
+
+    .btn-submit-cmt {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      font-size: 1.5em;
+
+      height: 40px;
+      padding: 11px 15px 8px 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ed1c24;
+        color: #fff;
+      }
+    }
+  }
+}

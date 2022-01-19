@@ -1,0 +1,306 @@
+// HELPER
+img {
+  max-width: 100%;
+}
+
+.btn-custom {
+  color: #555;
+  border-color: #ccc;
+  background: #f7f7f7;
+  box-shadow: inset 0 -1px 0 #ccc;
+  white-space: nowrap;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
+
+  &:hover {
+    background: #fafafa;
+    border-color: #999;
+    box-shadow: inset 0 -1px 0 #999;
+    color: #23282d;
+  }
+
+  &.active {
+    color: #000;
+    font-weight: 600;
+  }
+
+  &[class*="bg-"] {
+    border: unset;
+  }
+
+  &.require-status {
+    &-success {
+      opacity: 1;
+    }
+
+    &-error {
+      opacity: 0.3;
+    }
+  }
+
+  .fas {
+    padding-right: 5px;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.fixed-bottom-right {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1030;
+
+  @media only screen and (min-width: 768px) {
+    bottom: 50px;
+  }
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.dis-none {
+  display: none;
+}
+
+.h {
+  &50 {
+    height: 50px !important;
+  }
+
+  &90 {
+    height: 90px;
+  }
+}
+
+.w {
+  &80 {
+    width: 80px !important;
+  }
+}
+
+.bg {
+  &-grey {
+    background-color: #f1f1f1;
+    color: #1f2d3d !important;
+  }
+
+  &-saostar {
+    background-color: #ed1c24;
+    color: #fff !important;
+  }
+
+  &-17a2b8 {
+    background-color: #17a2b8;
+    color: #fff;
+
+    &:hover {
+      background-color: #117a8b;
+      color: #fff;
+    }
+  }
+
+  &-c7c6c5 {
+    background-color: #878682;
+    color: #fff;
+
+    &:hover {
+      background-color: #6e6c68;
+      color: #fff;
+    }
+  }
+
+  &-12BF6D {
+    background-color: #12bf6d;
+    color: #fff;
+
+    &:hover {
+      background-color: #0ba059;
+      color: #fff;
+    }
+  }
+
+  &-F3879D {
+    background-color: #f3879d;
+    color: #fff;
+
+    &:hover {
+      background-color: #c26c7e;
+      color: #fff;
+    }
+  }
+
+  &-428bca {
+    background-color: #428bca;
+    color: #fff;
+    border-color: #357ebd;
+
+    &:hover {
+      background-color: #3276b1;
+      color: #fff;
+    }
+  }
+
+  &-d9534f {
+    background-color: #d9534f;
+    color: #fff;
+
+    &:hover {
+      background-color: #d2322d;
+      color: #fff;
+    }
+  }
+
+  &-FFA52A {
+    background-color: #ffa52a;
+    color: #fff;
+
+    &:hover {
+      background-color: #ff8c00;
+      color: #fff;
+    }
+  }
+
+  &-f0ad4e {
+    background-color: #f0ad4e;
+    color: #fff;
+
+    &:hover {
+      background-color: #ed9c28;
+      color: #fff;
+    }
+  }
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.color {
+  &-ed1c24 {
+    color: #ed1c24;
+  }
+}
+
+.hover {
+  &-opacity-1:hover {
+    opacity: 1 !important;
+  }
+}
+
+.badge.badge-outlined {
+  background-color: transparent;
+}
+
+.badge.badge-outlined.badge-default {
+  border-color: #b0bec5;
+  color: #b0bec5;
+}
+
+.badge.badge-outlined.badge-primary {
+  border-color: #2196f3;
+  color: #2196f3;
+}
+
+.badge.badge-outlined.badge-secondary {
+  border-color: #323a45;
+  color: #323a45;
+}
+
+.badge.badge-outlined.badge-success {
+  border-color: #64dd17;
+  color: #64dd17;
+}
+
+.badge.badge-outlined.badge-warning {
+  border-color: #ffd600;
+  color: #ffd600;
+}
+
+.badge.badge-outlined.badge-info {
+  border-color: #29b6f6;
+  color: #29b6f6;
+}
+
+.badge.badge-outlined.badge-danger {
+  border-color: #ef1c1c;
+  color: #ef1c1c;
+}
+
+.text-ellipsis {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.scrollbar-none {
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+  }
+}
+
+.img-avatar-size {
+  width: 50px !important;
+  height: 80px !important;
+
+  @media only screen and (min-width: 768px) {
+    width: 80px !important;
+    height: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mobi {
+    &-mt {
+      &-10 {
+        margin-top: 10px;
+      }
+    }
+
+    &-dis-block {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ipad {
+    &-dis-none {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .lc-lg-1 {
+    -webkit-line-clamp: 1;
+  }
+}

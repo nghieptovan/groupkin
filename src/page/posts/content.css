@@ -1,0 +1,11 @@
+.tab-require-status-success {
+    border-bottom: 3px solid #1e7e34 !important;
+}
+
+.tab-require-status-error {
+    border-bottom: 3px solid #bd2130 !important;
+}
+
+.disable-tab {
+    pointer-events: none;
+}

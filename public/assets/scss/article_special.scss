@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "NotoSerif-Bold";
+  src: url("../fonts/NotoSerif-Bold.woff2");
+}
+
+@font-face {
+  font-family: "NotoSerif-Regular";
+  src: url("../fonts/NotoSerif-Regular.woff2");
+}
+
+article {
+
+
+  &.special-editor-type {
+    .article-content {
+      .content {
+        >*:first-child {
+          margin-top: 0 !important;
+        }
+
+        p {
+          width: 750px;
+          margin: 0 auto;
+          font-size: 20px;
+          line-height: 1.6;
+          font-family: NotoSerif-Regular !important;
+
+          @media (max-width: 1080px) {
+
+            width: 95%;
+
+          }
+        }
+      }
+
+      .ss_sep_img_wrap {
+        text-align: center;
+      }
+
+      .block-text-img-wrap {
+        width: 450px;
+        float: left;
+        margin-right: 20px;
+        margin-left: -100px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .article-credit {
+      display: flex;
+      width: 400px;
+      justify-content: space-around;
+
+      .item {
+        font-size: 15px;
+
+        .label {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        .value {
+          font-weight: bold;
+        }
+      }
+    }
+
+    @media (max-width: 1080px) {
+      .w780 {
+        width: 95%;
+      }
+    }
+  }
+}

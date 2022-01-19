@@ -1,0 +1,59 @@
+.list-mobile.list-royalties {
+  padding: 0 !important;
+
+  .card-header {
+    border-bottom: unset;
+  }
+
+  tr.royalties-report-item {
+    height: 90px;
+
+    td {
+      width: 100%;
+      padding: 0 !important;
+
+      .avatar {
+        width: 50px;
+        height: 80px;
+        position: relative;
+      }
+
+      .right {
+        width: calc(100% - 50px);
+        padding-left: 10px;
+
+        .title {
+          margin-top: 0;
+          margin-bottom: 0px;
+          font-size: 1.2em;
+
+          @media screen and (max-width: 768px) {
+            font-size: 1em;
+          }
+        }
+
+        .time {
+          font-size: 0.8em;
+        }
+
+        .cate-name {
+          a {
+            color: #212529;
+            font-size: 75%;
+            display: inline-block;
+            padding: 0.25em 0.4em;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: initial;
+            margin-bottom: 0 !important;
+            background-color: unset !important;
+            border: 1px solid;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}

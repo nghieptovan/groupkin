@@ -1,0 +1,29 @@
+stages:
+  # - test
+  # - build
+  - deploy
+
+# test:
+#   stage: test
+#   script: echo "Running tests"
+
+# build:
+#   stage: build
+#   script: echo "Building the app"
+
+deploy-production:
+   stage: deploy
+   before_script:
+     - whoami
+     - cd /home/saostar/saostar-cms-src2/
+     - git reset --hard HEAD
+     - git pull origin master
+     - npm install
+   script:
+     - CI=false npm run build
+     - rsync -avzh --delete /home/saostar/saostar-cms-src2/build/ /home/saostar/saostar-cms/
+   environment:
+     name: production frontend cms
+     url: "https://cms2.saostar.vn"
+   only:
+     - master

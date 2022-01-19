@@ -1,0 +1,494 @@
+.layout-pc-2,
+.layout-pc-3,
+.layout-mobile {
+  border-top: unset !important;
+  background-color: unset;
+  box-shadow: unset;
+
+  >.card-header {
+    padding: 0;
+    border-bottom: 0;
+
+    .card-title {
+      display: none;
+    }
+
+    .card-tools {
+      // // bottom: 20px;
+      // // right: 1.55rem;
+      // // z-index: 5;
+
+      // @media screen and (max-width: 768px) {
+      //   position: fixed;
+      //   width: 100%;
+      //   right: unset;
+      //   left: 50%;
+      //   bottom: 5px;
+      //   transform: translate(-50%, 0);
+
+      //   .action-div {
+      //     &>* {
+
+      //       width: 30%;
+
+      //     }
+
+      //   }
+
+      //   .btn-custom {
+      //     font-size: 0.8em;
+
+      //     i {
+      //       display: block;
+      //       font-size: 1.4em;
+
+      //     }
+      //   }
+
+      // }
+    }
+  }
+
+  >.card-body {
+    padding: 0;
+
+    .tab-content {
+      position: relative;
+
+      .tab-pane {
+        >.row {
+          background-color: #fff;
+          background-clip: border-box;
+          border: 0 solid rgba(0, 0, 0, 0.125);
+          border-radius: 0.25rem;
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+          margin-bottom: 25px;
+        }
+
+        .card-header {
+          &.tab-require-status-error {
+            border-top: 5px solid #bd2130 !important;
+            border-bottom: unset !important;
+          }
+
+          &.tab-require-status-success {
+            border-top: 5px solid #1e7e34 !important;
+            border-bottom: unset !important;
+          }
+
+          .card-title {
+            display: block;
+            font-weight: 600;
+          }
+
+          .fa-arrow-up {
+            display: none;
+          }
+        }
+      }
+
+      &.thumbnail {
+        .tab-pane {
+          box-shadow: unset;
+        }
+      }
+    }
+  }
+}
+
+.layout-pc-2,
+.layout-pc-3 {
+  >.card-header {
+    .card-tools {
+      margin-right: 0;
+    }
+  }
+
+  >.card-body {
+    .tab-content {
+      .col-right {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        padding-left: 15px;
+        width: 400px;
+        max-width: unset;
+      }
+
+      .tab-pane {
+        &.col-8 {
+          width: calc(100% - 400px);
+          max-width: unset;
+        }
+      }
+    }
+  }
+}
+
+.layout-mobile {
+  >.card-header {
+    .card-tools {
+      // @media screen and (max-width: 768px) {
+      position: fixed;
+      width: 100%;
+      right: unset;
+      left: 50%;
+      bottom: 5px;
+      transform: translate(-50%, 0);
+      z-index: 2;
+
+      .action-div {
+        &>* {
+          width: 30%;
+        }
+      }
+
+      .btn-custom {
+        font-size: 0.8em;
+
+        i {
+          display: block;
+          font-size: 1.4em;
+        }
+      }
+
+      // }
+    }
+  }
+
+  .action-div {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+
+    >button {
+      width: 95%;
+      margin: 5px 0 !important;
+      padding: 12px 0 !important;
+    }
+
+    .react-datepicker-wrapper {
+      width: 100%;
+
+      .react-datepicker__input-container {
+        >button {
+          width: 95%;
+          margin: 5px 0 !important;
+          padding: 12px 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.layout-pc {
+  .tab-pane {
+    .card-body {
+      padding-top: 0;
+    }
+  }
+}
+
+.layout-pc-3 {
+  .tab-content {
+    .col-center {
+      position: absolute;
+      top: 0;
+      right: 400px;
+      padding-left: 20px;
+      width: calc(100% - 400px - 25%);
+      max-width: unset;
+    }
+
+    .col-right {}
+  }
+}
+
+.content-wrapper {
+  margin-top: 60px;
+
+  @media (max-width: 992px) {
+    margin-top: 0;
+  }
+}
+
+// .post-create {
+//   .card-header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     &:after {
+//       content: unset;
+//     }
+//   }
+
+//   .nav-link {
+//     padding: 1rem;
+//   }
+// }
+
+// .layout-single,
+// .layout-2-pc {
+//   .card-tools {
+//     position: fixed;
+//     bottom: 70px;
+//     right: 0.9rem;
+//     z-index: 3;
+
+//     @media screen and (max-width: 600px) {
+//       bottom: 20px;
+//     }
+//   }
+
+//   .card {
+//     margin-bottom: 1.8rem;
+
+//     &.tab-require-status-error {
+//       border-top: 5px solid #bd2130 !important;
+//       border-left: unset !important;
+//     }
+
+//     &.tab-require-status-success {
+//       border-top: 5px solid #1e7e34 !important;
+//       border-left: unset !important;
+//     }
+
+//     .card-header {
+//       padding-left: 0;
+//       padding-right: 0;
+
+//       .card-title {
+//         font-weight: 600;
+//       }
+
+//       .fa-arrow-up {
+//         transition: all .3s;
+//         cursor: pointer;
+//         padding: 5px;
+
+//         &.active {
+//           transform: rotate(180deg);
+//         }
+
+//       }
+//     }
+
+//     .card-body {
+//       // padding: 0;
+//       padding: 0.35rem 0;
+//       transition: height .3s;
+//       height: 0;
+//       overflow: hidden;
+
+//       .card-body {
+//         padding: 0;
+//         transition: height .3s;
+//         height: 0;
+//       }
+
+//       &.active {
+//         height: 100%;
+
+//         .card-body {
+//           height: 100%;
+//         }
+
+//         &.unset-overflow {
+//           overflow: unset;
+
+//           .card-body {
+//             overflow: unset;
+//           }
+//         }
+//       }
+
+//     }
+//   }
+
+// }
+
+// DROPZONE
+#custom-content-below-tabContent {
+  min-height: 50vh;
+
+  .container-fluid {
+    position: relative;
+  }
+}
+
+.tab-pane {
+  width: 100%;
+}
+
+.dropzone {
+  &-horizontal {
+    position: relative;
+    padding-bottom: 62.5%;
+    padding-left: 0;
+    padding-right: 0;
+
+    &.droped {
+      display: none;
+    }
+
+    .container {
+      // max-width: 100%;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 0;
+
+      .dropzone {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-vertical {
+    position: relative;
+    padding-bottom: 160%;
+    padding-left: 0;
+    padding-right: 0;
+
+    &.droped {
+      display: none;
+    }
+
+    .container {
+      // max-width: 62.5%;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 0;
+
+      .dropzone {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+}
+
+.dropzone-editing {
+  .dropzone-horizontal {
+    padding-bottom: 0;
+    display: inline-block;
+  }
+
+  .dropzone-vertical {
+    padding-bottom: 0;
+    display: inline-block;
+  }
+
+  .container {
+    position: relative;
+    margin-bottom: 20px;
+
+    .dropzone {
+      position: relative;
+      background-color: unset;
+      padding: 0;
+
+      p {
+        cursor: pointer;
+        font-size: 15px;
+        text-align: right;
+        top: 0;
+        transform: unset;
+        margin-bottom: 0;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+
+  .final-image {
+    width: 100%;
+  }
+  .drag-again{
+    position: absolute;
+    z-index: 999;
+    color: red;
+    font-size: 2em;
+  }
+}
+
+// SWITCH
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked+.slider {
+  background-color: #2196f3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 19px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

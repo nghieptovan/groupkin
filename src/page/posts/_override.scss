@@ -1,0 +1,213 @@
+// OVERRIDE
+.page-item.active .page-link {
+  z-index: 0;
+}
+
+body {
+  font-size: 0.87rem;
+  color: #626262;
+}
+
+label {
+  color: #212529;
+}
+
+.form-control {
+  font-size: 0.8rem;
+}
+
+h1 {
+  word-break: break-word;
+}
+
+.content-wrapper {
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+}
+
+.main-header {
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .nav-link {
+    height: unset;
+  }
+}
+
+.navbar-brand {
+  padding-top: 0;
+}
+
+.info-box .info-box-number {
+  font-size: 1.4rem;
+}
+
+.main-footer {
+  background: rgba(101, 40, 245, .05) !important;
+  color: #210f59 !important;
+}
+
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+
+.form-group .text-danger,
+.invalid-feedback {
+  font-size: 13px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #212529;
+}
+
+.badge {
+  border-radius: 4px;
+}
+
+.btn-sm {
+  border-radius: 4px;
+}
+
+// CONFIRM ALERT
+.react-confirm-alert-overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
+
+  .react-confirm-alert {
+    border-radius: 5px !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+    @media only screen and (max-width: 768px) {
+      box-shadow: unset;
+    }
+
+    .custom-ui-alert {
+      background: #fff;
+      padding: 0;
+      color: #333;
+      border-radius: 5px;
+
+      @media only screen and (max-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+        padding: 45px;
+      }
+
+      .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+          width: 50%;
+          text-align: center;
+          padding: 25px;
+          cursor: pointer;
+          color: #fff;
+          font-size: 18px;
+          text-transform: uppercase;
+        }
+      }
+
+    }
+  }
+}
+
+
+.react-daterange-picker__wrapper {
+  height: 38px;
+}
+
+li {
+
+  [class*=icheck-].no-background {
+    label {
+      opacity: 1 !important;
+    }
+
+    input+label::before {
+      border: unset !important;
+    }
+
+    input:checked+label::before {
+      background-color: unset !important;
+    }
+
+    input:checked+label::after {
+      border-bottom: 2px solid #007bff !important;
+      border-right: 2px solid #007bff !important;
+    }
+
+  }
+
+  &.checked {
+
+    .text {
+      color: #007bff;
+    }
+  }
+}
+
+.todo-list>li {
+  background-color: unset !important;
+  border-left: unset;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .react-daterange-picker {
+    width: 100%;
+
+    .react-daterange-picker__wrapper {
+      width: 100%;
+      background-color: #fff;
+      padding-left: 13px;
+    }
+  }
+
+
+  .small-box {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+}
+
+.nav-tabs .nav-link.active {
+  font-weight: bold;
+}
+
+
+
+// REACT SELECT
+.sectionTest {
+  :global .Select-control {
+    height: 1000px;
+  }
+
+  :global .Select-placeholder {
+    line-height: 20px
+  }
+
+  :global .Select-value {
+    line-height: 26px !important;
+  }
+
+  :global .Select-value-label {
+    line-height: 26px;
+  }
+
+  :global .Select-input {
+    height: 26px;
+  }
+}

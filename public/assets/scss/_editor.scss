@@ -1,0 +1,52 @@
+body .gutenberg__editor {
+  font-size: 16px;
+
+  .edit-post-sidebar {
+    display: none;
+  }
+}
+
+button[aria-label="Settings"] {
+  display: none;
+}
+
+
+// disale unused menu group
+.components-menu-group {
+
+  &:nth-child(1),
+  &:nth-child(3),
+  &:nth-child(4) {
+    display: none;
+  }
+}
+
+
+// disale unused block
+.components-panel__body {
+
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .gutenberg__editor .edit-post-visual-editor .editor-post-title,
+  .gutenberg__editor .edit-post-visual-editor .editor-post-title__block,
+  .gutenberg__editor .edit-post-visual-editor .editor-block-list__block,
+  .gutenberg__editor .edit-post-visual-editor .editor-default-block-appender {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+}
+
+
+.edit-post-header {
+  position: relative !important;
+  padding: 0 !important;
+  top: 0 !important;
+}

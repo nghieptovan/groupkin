@@ -1,0 +1,571 @@
+.home-feature {
+  .block1 {
+    .card {
+      &:nth-child(1) {
+        width: 69.85%;
+
+        .title {
+          font-size: 2.5em;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 27.2%;
+
+        .title {
+          font-size: 1.8em;
+        }
+      }
+    }
+  }
+
+  .block2 {
+    .card {
+      width: 31.37%;
+
+      .title {
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+
+.dsk {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    .display-flex {
+      .card {
+        &:first-child {
+          border-right: 1px solid #d8d8d8;
+        }
+      }
+
+      .title {
+        font-size: 1.4em;
+      }
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #ed1c24;
+      }
+    }
+
+    .route {
+      display: block;
+      text-align: center;
+      font-size: 1.6em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.an-pham {
+  border-top: 7px solid #ed1c24;
+  padding-top: 20px;
+
+  .head {
+    h4 {
+      font-size: 2.6em;
+      font-weight: bold;
+
+      span {
+        font-size: 0.8em;
+        font-style: italic;
+        font-weight: normal;
+      }
+
+      img {
+        height: 24px;
+      }
+    }
+
+    p {
+      padding: 15px 0;
+      font-size: 1.4em;
+    }
+  }
+
+  .content {
+    background-color: #000;
+    padding: 15px 10px;
+    border-bottom: 3px solid #ed1c24;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #ed1c24;
+      }
+    }
+
+    .item {
+      width: 31.8%;
+    }
+  }
+}
+
+.box-videos {
+  .head {
+    background-image: linear-gradient(85deg, #3d3d3d, #505050);
+  }
+
+  .content {
+    >*:nth-child(1) {
+      width: 60%;
+      padding-right: 20px;
+
+      .btn-share {
+        background-color: #fff;
+        color: #4167b2;
+      }
+    }
+
+    >*:nth-child(2) {
+      width: 40%;
+      max-height: 550px;
+      overflow-y: scroll;
+      padding-right: 10px;
+
+      .card {
+        .title {
+          font-size: 1.3em;
+          font-weight: 600;
+        }
+      }
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.chuyen-muc {
+  width: 31.5%;
+
+  .card {
+    &:nth-child(1) {
+      .title {
+        font-size: 1.8em;
+      }
+
+    }
+
+    .title {
+      font-size: 1.4em;
+    }
+  }
+
+
+  &.big {
+    width: 65.75%;
+
+    .content {
+      >* {
+        width: 47.908745%;
+      }
+
+      .big {
+        >.card {
+          &:nth-child(1) {
+            .title {
+              font-size: 1.8em;
+            }
+
+          }
+        }
+
+      }
+
+      .card {
+        &:nth-child(1) {
+          .title {
+            font-size: 1.4em;
+          }
+
+        }
+      }
+
+    }
+  }
+}
+
+.ban-can-biet {
+  background-color: rgba(242, 243, 245, .7);
+  padding: 20px 15px;
+  border: solid 1px #d8d8d8;
+
+  .card {
+    .title {
+      font-size: 1.4em;
+    }
+  }
+}
+
+.tin-moi-nhat {
+
+
+  .head {
+    border-radius: 4px 4px 0 0;
+    background: url(../images/tin-moi-nhat.jpg) 100% 100%;
+    padding: 20px;
+
+    a {
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  .list-cards {
+    border: solid 1px #d8d8d8;
+    max-height: 500px;
+    overflow-y: scroll;
+
+    .card {
+      &.mini-card {
+        border-bottom: 1px solid #e7e8ea;
+        margin-top: 15px;
+        padding-bottom: 14px;
+
+        .title {
+          padding-left: unset;
+        }
+      }
+    }
+  }
+}
+
+.co-the-ban-quan-tam {
+  .card {
+    .title {
+      font-size: 1.6em;
+    }
+  }
+}
+
+.xem-them-ve {
+  border: solid 1px #d8d8d8;
+
+  .head {
+    font-size: 1.6em;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+
+    a {
+      font-weight: normal;
+      color: #ed1c24;
+    }
+
+    &:before {
+      content: '';
+      width: 40px;
+      height: 2px;
+      position: absolute;
+      background-color: #ed1c24;
+      bottom: -15px;
+      transition: all .3s;
+    }
+
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .list-cards {
+    .card {
+      .title {
+        font-weight: normal;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.video-duoc-quan-tam {
+  .card {
+
+    .title,
+    .display-flex {
+      padding: 0 20px;
+    }
+
+    .title {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+.category-feature {
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #ed1c24;
+    position: absolute;
+    bottom: -8px;
+    display: block;
+    width: calc(100% - 18%);
+  }
+
+  &.giai-tri {
+    &:after {
+      width: 100%;
+      background-color: #d8d8d8;
+    }
+  }
+
+
+  &.cong-nghe {
+    &:after {
+      content: unset;
+    }
+
+    .block1 {
+      width: 66.3%;
+    }
+
+    .block2 {
+      width: 32.66%;
+
+      .card {
+        .title {
+          font-size: 1.6em;
+        }
+      }
+    }
+  }
+
+  .block1 {
+    .card {
+      &.h-thumb {
+        .title {
+          font-size: 2.5em;
+        }
+      }
+
+      &.mini-card {
+        .title {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .block2 {
+    .card {
+      .title {
+        font-size: 1.8em;
+
+      }
+    }
+  }
+}
+
+.am-nhac-feature {
+  padding: 20px 15px;
+
+  .display-flex {
+    &>* {
+      width: 31.7%;
+    }
+  }
+
+  .head {
+    a {
+      img {
+        height: 18px;
+      }
+
+      font-weight: 600;
+      font-size: 1.6em;
+    }
+  }
+
+  .list-cards {
+    .card {
+      &.h-thumb {
+        .img-holder {
+          padding-bottom: 40%;
+        }
+
+        .title {
+          font-size: 1.6em;
+          padding-right: 0;
+          -webkit-line-clamp: 3;
+        }
+
+        .sapo {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.hot-show {
+  background-image: url(../images/bg-giai-tri-hotshow.png);
+
+  .head {
+    text-align: center;
+    padding-top: 20px;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .display-flex {
+    padding: 20px 50px;
+
+    &>* {
+      width: 31%;
+    }
+  }
+
+  .list-cards {
+    .card {
+      padding-bottom: 0;
+
+      &.h-thumb {
+        .img-holder {
+          padding-bottom: 40%;
+        }
+
+        .title {
+          font-size: 1.6em;
+          padding-right: 0;
+          padding-left: 0;
+          -webkit-line-clamp: 3;
+
+          a {
+            color: #fff;
+          }
+
+          .ssf-dot {
+            font-size: 1em;
+            color: #ed1c24;
+          }
+        }
+
+        .sapo {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+}
+
+.top-view-giai-tri {
+  .head {
+    font-size: 2.2em;
+    font-weight: 600;
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .list-cards {
+    .card {
+      padding-bottom: 0;
+      border-bottom: unset;
+
+      .title {
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+
+.cong-nghe-list-icons {
+  a {
+    width: calc((100% - 50px)/6);
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 25px 0;
+
+    img {
+      width: 40px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 1.4em;
+      display: block;
+      margin-top: 5px;
+    }
+
+    &:hover {
+      background-color: #ed1c24;
+
+      img {
+        filter: brightness(1000000%);
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.tech-special {
+  .head {
+    background-color: #333;
+    border-top: 3px solid #ed1c24;
+
+    h3 {
+      color: #fff;
+      position: relative;
+
+      span {
+        position: relative;
+        z-index: 2;
+        padding-left: 15px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: calc(100% + 8px);
+        left: 0;
+        top: -13px;
+        background: #ec1c24;
+        border-top: 12px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 30px solid transparent;
+        clip-path: polygon(0 0, 0 0, 100% 0, 90% 100%, 100% 0, 90% 100%, 0 100%, 0 100%);
+      }
+    }
+  }
+}

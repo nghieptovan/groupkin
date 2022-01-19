@@ -1,0 +1,9 @@
+img.image-loader {
+  opacity: 0;
+  transition: opacity ease-out 0.2s;
+  width: 100%;
+  height: auto;
+}
+img.image-loader.lazyloaded {
+  opacity: 1;
+}

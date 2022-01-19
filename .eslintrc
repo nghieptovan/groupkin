@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "babel"
+  ],
+  "extends": [
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "new-cap": 0,
+    "babel/new-cap": 0,
+    "react/prefer-stateless-function": 0,
+    "react/prop-types": 0,
+    "react/no-direct-mutation-state": 0,
+    "react/jsx-key": 0,
+    "react/no-unescaped-entities": 0
+  },
+  "globals": {
+    "__DEVELOPMENT__": true
+  }
+}

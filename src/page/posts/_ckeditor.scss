@@ -1,0 +1,153 @@
+.ck {
+  &.ck-content {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.68;
+    font-size: 18px;
+    color: #333;
+
+    h3 {
+      font-weight: bold;
+    }
+
+    .media>figcaption {
+      display: table-caption;
+      caption-side: bottom;
+      word-break: break-word;
+      color: #333;
+      background-color: #f7f7f7;
+      padding: .6em;
+      font-size: .75em;
+      outline-offset: -1px;
+    }
+  }
+
+  &.ck-editor__editable {
+    .image {
+      position: unset !important;
+    }
+
+    figure {
+      &.media {
+        figcaption {
+          &.ck-hidden {
+            display: block !important;
+          }
+        }
+      }
+    }
+
+  }
+
+  .ck-widget_with-resizer {
+    position: unset !important;
+  }
+}
+
+.normal {
+  .ck {
+    &.ck-content {
+      min-height: 600px;
+
+      @media only screen and (min-width: 768px) {
+        min-width: 550px;
+        max-width: 650px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.mini {
+  .ck {
+    &.ck-content {
+      @media only screen and (min-width: 768px) {
+        p {
+          width: 660px;
+          margin: 0 auto;
+          margin-bottom: 1rem;
+        }
+
+        figure {
+          &.image-style-side {
+            display: block;
+            // width: 660px;
+            max-width: 660px;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            float: unset;
+
+            figcaption {
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.editor-mini {
+    max-width: 1040px;
+    padding: 0 10px;
+    margin: 0 auto;
+    min-height: 50vh;
+  }
+}
+
+.special {
+  .ck {
+    &.ck-content {
+      font-family: 'Times New Roman', Times, serif;
+      line-height: 1.6;
+      font-size: 20px;
+      color: #333;
+
+      width: 780px;
+      margin: 0 auto;
+      overflow: initial;
+
+      p {
+        width: 750px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+      }
+
+      figure {
+        &.image-style-side {
+          display: block;
+          // width: 750px;
+          max-width: 750px;
+          margin: 0 auto;
+          margin-bottom: 1rem;
+          float: unset;
+
+          img {
+            width: 100%;
+          }
+
+          figcaption {
+            display: block !important;
+          }
+        }
+
+        &.image {
+          &:not(.image-style-side):not(.image-style-align-right):not(.image-style-align-left) {
+            width: 99.225vw;
+            position: relative !important;
+            margin-left: -49.59vw;
+            left: 50%;
+          }
+
+          &.image-style-align-left {
+            margin-left: -100px;
+            margin-right: 15px;
+          }
+
+          &.image-style-align-right {
+            margin-right: -100px;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
