@@ -27,64 +27,14 @@ class FooterComponent extends Component {
     const { closeGopY } = this.state;
 
     return (
-      <>
-        <footer className="main-footer">
-          <strong>Copyright &copy; 2021 <a href="https://facebook.com/tovannghiep">NT</a>.</strong>
-        </footer>
-
-        {
-          !closeGopY &&
-          <div
-            className="fixed-bottom"
-            style={
-              this.isMobile ?
-                {
-                  bottom: 'unset',
-                  top: '50%',
-                  transform: 'rotate(-90deg) translateY(-50%)',
-                  right: '-120px',
-                  left: "unset"
-                }
-                : {
-                  left: "unset"
-                }
-            }
-          >
-            <div className="position-relative">
-
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRXPYYdsN3eJppeUE2jtlbKAuaa1YNGoPuLrMDJLkmUlOz_w/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button type="button" className="btn bg-gradient-primary btn-app btn-flat"
-                  style={{
-                    height: "unset",
-                    marginBottom: "0",
-                    marginRight: "20px",
-                    padding: '10px'
-                  }}
-                >
-                  SAOStar: Góp ý - Báo lỗi CMS 2020
-              </button>
-              </a>
-              <span className="badge bg-warning position-absolute"
-                style={{
-                  fontSize: "15px",
-                  top: "-10px",
-                  right: "11px",
-                  cursor: "pointer",
-                  borderRadius: "999px",
-                  zIndex: '2'
-                }}
-                onClick={this.closeGopY}
-              >
-                <i className="fas fa-times"></i>
-              </span>
-            </div>
-          </div >
-        }
-
-      </>
+      <div className="footer py-4 d-flex flex-lg-column" id="kt_footer">
+						<div className="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
+							<div className="text-dark order-2 order-md-1">
+								<span className="text-muted fw-bold me-1">2022©</span>
+								<a href="" target="_blank" rel="noopener noreferrer" className="text-gray-800 text-hover-primary">Keenthemes</a>
+							</div>
+						</div>
+					</div>
     );
   }
 }

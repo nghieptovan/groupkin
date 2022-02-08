@@ -1,11 +1,9 @@
 import React from 'react'
 import { Route, Switch } from 'react-router'
 import LoginPage from '../../src/page/login'
-import PaymentList from '../../src/page/payment/payment.list'
 import Dashboard from '../../src/page/dashboard'
-import TopupList from '../../src/page/coin/topup.list'
-import CoinList from '../../src/page/coin/coin.list'
-import CoinPromotion from '../../src/page/coin/coin.promotion'
+import InvestorList from '../../src/page/investor/investor.list'
+import TransactionList from '../../src/page/transaction/transaction.list'
 import Error404 from '../../src/page/error404'
 import PublicLayout from '../../src/components/layout/public-layout'
 import PrivateLayout from '../../src/components/layout/private-layout'
@@ -20,13 +18,10 @@ const routeslist = [
   {
     layout:PrivateLayout,
     subRoutes:[
-      { exact:true, path:"/", component:PaymentList},
-      { exact:true, path:"/payment", component:PaymentList},
-      { exact:true, path:"/account", component:CoinList},
-      { exact:true, path:"/coin", component:CoinList},
-      { exact:true, path:"/coin/topup", component:TopupList},
-      { exact:true, path:"/coin/list", component:CoinList},
-      { exact:true, path:"/coin/promotion", component:CoinPromotion},
+      { exact:true, path:"/", component:Dashboard},
+      { exact:true, path:"/dashboard", component:Dashboard},
+      { exact:true, path:"/transactions", component:TransactionList},
+      { exact:true, path:"/investors", component:InvestorList},
     ]
   },
 ];

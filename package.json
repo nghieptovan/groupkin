@@ -113,6 +113,7 @@
     "react-bootstrap-daterangepicker": "^4.1.0",
     "react-chartjs-2": "^2.9.0",
     "react-checkbox-group": "^5.0.2",
+    "react-codemod": "^5.4.3",
     "react-color": "^2.18.0",
     "react-confirm-alert": "^2.5.1",
     "react-country-flag": "^2.0.1",

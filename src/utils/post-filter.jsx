@@ -1,5 +1,6 @@
 import localStorage from '../utils/local-storage'
 import _ from 'lodash'
+
 export const filtersToUlr = filters => {
   let queryString = "";
   for (const key in filters) {
@@ -24,7 +25,10 @@ export const filtersToUlr = filters => {
   return queryString;
 };
 
+
+// object to querystring
 export const filtersToQueryString = filters => {
+  
   let queryString = "";
   for (const key in filters) {
     if (filters.hasOwnProperty(key)) {
@@ -34,20 +38,16 @@ export const filtersToQueryString = filters => {
       } else {
         value = filters[key].value;
       }
+
       if (value !== "" && value !== -1) {
-        if (filters[key].fieldName === "_start") {
-          let numberPage = value >= 1 ? value - 1 : 0;
-          let totalPerPage = filters.limit.value ? filters.limit.value : 20;
-          queryString += `&_start=${numberPage * totalPerPage}`;
-        } else {
-          queryString += `&${filters[key].fieldName}=${value}`;
-        }
+        queryString += `&${filters[key].fieldName}=${value}`;
       }
     }
   }
   return queryString;
 };
 
+// querystring to object
 export const queryStringToObject = queryString => {
   let objectReturn = {};
   for (const key in queryString) {
@@ -63,7 +63,7 @@ export const queryStringToObject = queryString => {
 };
 
 export const formatterCurrency = moneystring => {
-  let formatted = new Intl.NumberFormat('en-US', {
+  let formatted = new Intl.NumberFormat('de', {
     style: 'currency',
     currency: 'VND',
   

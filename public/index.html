@@ -38,7 +38,7 @@ License: For each use you must have a valid license purchased only from above li
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
-	<body id="kt_body" class="bg-dark">
+	<body id="kt_body" class="bg-dark" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px;">
     <script>
       ;
       (function (w, d, s, g, js, fjs) {
@@ -64,8 +64,6 @@ License: For each use you must have a valid license purchased only from above li
     <div id="root"></div>
 		
 		<script>var hostUrl = "%PUBLIC_URL%/assets/";</script>
-
-
 		<!--begin::Javascript-->
 		<!--begin::Global Javascript Bundle(used by all pages)-->
 		<script src="%PUBLIC_URL%/assets/plugins/global/plugins.bundle.js"></script>
@@ -73,13 +71,29 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Page Vendors Javascript(used by this page)-->
 		<script src="%PUBLIC_URL%/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+		<script src="%PUBLIC_URL%/assets/plugins/custom/datatables/datatables.bundle.js"></script>
 		<!--end::Page Vendors Javascript-->
 		<!--begin::Page Custom Javascript(used by this page)-->
 		<script src="%PUBLIC_URL%/assets/js/custom/widgets.js"></script>
 		<script src="%PUBLIC_URL%/assets/js/custom/apps/chat/chat.js"></script>
 		<script src="%PUBLIC_URL%/assets/js/custom/modals/create-app.js"></script>
 		<script src="%PUBLIC_URL%/assets/js/custom/modals/upgrade-plan.js"></script>
+
+
+		<!--end::Global Javascript Bundle-->
+
+		<!--begin::Page Custom Javascript(used by this page)-->
+		<script src="%PUBLIC_URL%/assets/js/custom/apps/customers/list/export.js"></script>
+		<script src="%PUBLIC_URL%/assets/js/custom/apps/customers/list/list.js"></script>
+		<script src="%PUBLIC_URL%/assets/js/custom/apps/customers/add.js"></script>
+		<script src="%PUBLIC_URL%/assets/js/custom/widgets.js"></script>
+		<script src="%PUBLIC_URL%/assets/js/custom/apps/chat/chat.js"></script>
+		<script src="%PUBLIC_URL%/assets/js/custom/modals/create-app.js"></script>
+		<script src="%PUBLIC_URL%/assets/js/custom/modals/upgrade-plan.js"></script>
+
+
 		<!--end::Page Custom Javascript-->
+
 		<!--end::Javascript-->
 	</body>
 	<!--end::Body-->

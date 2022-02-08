@@ -17,8 +17,7 @@ class SpinLoader extends Component{
 
     let {loading , color}=this.props
     return(
-      <CircleLoader
-      color={color} loading={loading} css={override} size={50} />
+      <CircleLoader color={color} loading={loading} css={override} size={50} />
     )
   }
 }
